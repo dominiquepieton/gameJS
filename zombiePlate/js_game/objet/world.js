@@ -7,7 +7,7 @@ let world = {
     topLayer : null,
     overLayer : null,
     positionStart : null,
-    //positionEnd : null,
+    positionEnd : null,
     score : 0,
     scoreText : null,
     gameOver : false,
@@ -159,7 +159,7 @@ let world = {
             let fontScore = {
                 fontSize : "32px",
                 color : "red",
-                fontFamily : "UnifrakturMaguntia"
+                fontFamily : "PressStar2P"
             }
             play.scene.add.text(
                 play.scene.cameras.main.midPoint.x-200,
