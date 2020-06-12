@@ -1,9 +1,10 @@
-Dossier contenant des jeux en javascript crées à partir de la bibliothéquejs PHASER.
-
-# 1- ZombiePlate :
+#                                       1- ZombiePlate :
+    https://forthebadge.com/images/badges/made-with-javascript.svg
+    
+    Dossier contenant des jeux en javascript crées à partir de la bibliothéquejs PHASER.
     Jeu de plate-forme simple et efficace.....
 
-# Installation de nodejs et nodemon
+#       Installation de nodejs et nodemon   
     Aprés avoir cloné le dossier, dans votre terminal aller sur le fichier serveur.js et effectuer :
             
                 npm init-y
