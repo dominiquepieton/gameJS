@@ -4,7 +4,7 @@ let player = {
     isAlive : true,
 
     initPlayer : function(){
-        this.onePlayer = play.scene.physics.add.sprite(200, 200, "player", "zombie_stand");
+        this.onePlayer = play.scene.physics.add.sprite(play.world.positionStart.x,play.world.positionStart.y, "player", "zombie_stand");
         // player reste toujours visible
         this.onePlayer.setCollideWorldBounds(true);
         this.onePlayer.setOrigin(0.5,1);
@@ -64,4 +64,9 @@ let player = {
             this.onePlayer.setVelocityX(0);
         }
     },
+
+    killPlayer : function(){
+        this.onePlayer.setTexture("player", "zombie_hurt");   
+        this.isAlive = false; 
+    }
 }
