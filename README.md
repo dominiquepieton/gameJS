@@ -1,5 +1,5 @@
 #                                       1- ZombiePlate :
-    https://forthebadge.com/images/badges/made-with-javascript.svg
+    https://forthebadge.com/#
     
     Dossier contenant des jeux en javascript crées à partir de la bibliothéquejs PHASER.
     Jeu de plate-forme simple et efficace.....
@@ -21,7 +21,7 @@
     Installer le module nodemon pour que votre serveur puisse se relancer automatiquement.
         
         npm install nodemon
-        
+        https://forthebadge.com/#
         
  # Lancement du serveur 
     npm start
