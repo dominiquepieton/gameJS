@@ -40,6 +40,9 @@
             data.contentType = "application/javascript";
             data.folder = "js_game/";
          break;
-    Dans cette exemple, case prend le type d'extension. Data.contentType ou type MIME vous trouverez la liste sur <a href="https://developer.mozilla.org/fr/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types">modzilla</a> .
+    Dans cette exemple, case prend le type d'extension. Data.contentType ou type MIME vous trouverez la liste sur                 modzilla.org .
     Et data.folder est le nom du dossier où se trouvera le fichier ou image ou music ....
-    
+    Si le fichier a besoin d'un type d'encodage vous pouvez l'ajouter juste en dessous de data.folder :
+        
+        data.encodage = "UTF-8";
+        
