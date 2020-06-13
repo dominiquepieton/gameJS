@@ -4,7 +4,7 @@ let play = {
     player : player,
     cursor : null,
     ennemyTemplate : ennemyTemplate,
-    level : 1
+    level : 1,
 };
 
 /******** loading images and sound *********/

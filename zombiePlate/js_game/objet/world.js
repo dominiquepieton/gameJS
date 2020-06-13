@@ -24,7 +24,7 @@ let world = {
 
     initWorld : function(){
         //création de la map avec le tilemap
-        this.tilemap = play.scene.make.tilemap({key: "level"+ play.level});
+        this.tilemap = play.scene.make.tilemap({key: "level"+ play.level});      
         this.tileset = this.tilemap.addTilesetImage("tilesheet", "tile");
 
         // utilisation des calque de la map
@@ -64,7 +64,7 @@ let world = {
         // le score suit le jeu
         this.scoreText.setScrollFactor(0);  
     },
-
+    
     manageHit : function(){
         //player
         this.overLayer.setTileIndexCallback(50,this.pickUpGem ,this);
@@ -72,6 +72,7 @@ let world = {
         this.overLayer.setTileIndexCallback(52,this.pickUpGem ,this);
         this.overLayer.setTileIndexCallback(53,this.pickUpGem ,this);
         this.overLayer.setTileIndexCallback(71,this.killPlayer,this);
+        this.overLayer.setTileIndexCallback(5,this.killPlayer,this);
         this.overLayer.setTileIndexCallback(76,this.endLevel,this);
         this.overLayer.setTileIndexCallback(90,this.endLevel,this);
         play.scene.physics.add.collider(play.player.onePlayer, this.worldLayer);
@@ -141,6 +142,8 @@ let world = {
         if (player.x > this.positionEnd.x - 2 && player.x < this.positionEnd.x + 2){
             if (!this.gameOver){
                 this.gameOver = true;
+                this.score += 500;
+                this.scoreText.setText("Score : " + this.score);
                 play.player.killPlayer();
                 //ajout d'un panneau pour rejouer
                 play.scene.add.sprite(play.scene.cameras.main.midPoint.x,

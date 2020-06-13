@@ -34,6 +34,9 @@ let ennemyTemplate = {
             attackEnnemy : function(player,ennemy){
                 //si le player saute sur l'ennemi
                 if(play.player.isJumping){
+                    play.world.score += 100;
+                    play.world.scoreText.setText("Score : " + play.world.score);
+                    console.log(play.world.score)
                     ennemy.destroy();
                 } else {
                     play.world.killPlayer();
