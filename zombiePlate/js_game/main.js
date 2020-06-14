@@ -13,6 +13,7 @@ function preload(){
     play.scene.load.image("tile", "tilesheet.png");
     play.scene.load.tilemapTiledJSON("level1", "level1_1.json");
     play.scene.load.tilemapTiledJSON("level2", "level1_2.json");
+    play.scene.load.tilemapTiledJSON("level3", "level1_3.json");
     play.scene.load.atlas("player", "player.png","playerAtlas.json");
     play.scene.load.atlas("soldier", "ennemy1.png","en1Atlas.json");
 

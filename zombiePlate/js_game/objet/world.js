@@ -24,7 +24,7 @@ let world = {
 
     initWorld : function(){
         //création de la map avec le tilemap
-        this.tilemap = play.scene.make.tilemap({key: "level"+ play.level});      
+        this.tilemap = play.scene.make.tilemap({key: "level"+play.level});//+ play.level      
         this.tileset = this.tilemap.addTilesetImage("tilesheet", "tile");
 
         // utilisation des calque de la map
@@ -73,6 +73,7 @@ let world = {
         this.overLayer.setTileIndexCallback(53,this.pickUpGem ,this);
         this.overLayer.setTileIndexCallback(71,this.killPlayer,this);
         this.overLayer.setTileIndexCallback(5,this.killPlayer,this);
+        this.overLayer.setTileIndexCallback(6,this.killPlayer,this);
         this.overLayer.setTileIndexCallback(76,this.endLevel,this);
         this.overLayer.setTileIndexCallback(90,this.endLevel,this);
         play.scene.physics.add.collider(play.player.onePlayer, this.worldLayer);
